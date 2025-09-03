@@ -35,4 +35,17 @@ export MINIKUBE_ACTIVE_DOCKERD="minikube"
 # To point your shell to minikube's docker-daemon, run:
 # eval $(minikube -p minikube docker-env)
 ```
+### Step 2: Point Shell to Minikube’s Docker
+```bash
+eval $(minikube -p minikube docker-env)
+```
+Now when you run:
+```bash
+docker ps
+```
+or 
+```bash
+docker image ls
+```
+you’ll see containers running inside Minikube.
 
